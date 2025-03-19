@@ -2,11 +2,22 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-white-100">
-      <h1 className="text-4xl font-bold text-black-800 mb-4">Welcome to My Website</h1>
-      <p className="text-lg text-green-700">
-        This is a custom homepage built with Next.js and Tailwind CSS!
-      </p>
+  <div className="wrapper p-[16px]">
+    <header className="flex justify-between 
+    items-center mb-[16px]">
+    </header>
+    <main className="flex flex-col gap-[16px]">
+      <input 
+      type="text" 
+      placeholder="Search" 
+      className="p-[16px] pl-[24px] border-gray-500 border-[1px] rounded-[100px] w-[100%]"/>
+      <img clessName="db rounded-[24px] w-[100%]" src="/img1.png" />
+      <img className="db rounded-[24px] w-[100%]" src="/img2.png" />
+
+
     </main>
+
+  </div>
+
   );
 }
